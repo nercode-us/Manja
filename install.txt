@@ -1,0 +1,11 @@
+
+pacman-mirrors -f
+pacman -Syyu
+pacman -S linux612-headers
+pacman -S base-devel cmake make gcc asciidoctor gcc-multilib
+pacman -S qt5-base qt5-tools argon2 botan qrencode zlib readline keyutils pcsclite libusb libxi libxtst qt5-x11extras minizip
+
+
+pamac search rtl8852 | grep AUR
+pamac install rtl8852au-dkms-git
+
